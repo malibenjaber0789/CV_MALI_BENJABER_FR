@@ -1,788 +1,887 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CV Mohamed Ali BEN JABER | Senior ADAS System Engineer</title>
+<title>CV Mohamed Ali BEN JABER | Senior ADAS System Engineer</title>
 
-    <meta name="description"
-          content="Mohamed Ali BEN JABER – Senior ADAS System Engineer, Function Owner, AI & Automation, Automotive SPICE.">
+<style>
+* {
+    box-sizing: border-box;
+}
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #eef0f4;
+    color: #222;
+    line-height: 1.55;
+}
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f3f4f6;
-            color: #222;
-            line-height: 1.55;
-        }
+.cv {
+    max-width: 1180px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 310px 1fr;
+    background: white;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.12);
+}
 
-        .container {
-            max-width: 1100px;
-            margin: 30px auto;
-            background: white;
-            display: grid;
-            grid-template-columns: 300px 1fr;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.10);
-        }
+/* ================= SIDEBAR ================= */
 
-        /* ================= SIDEBAR ================= */
+.sidebar {
+    background: #202632;
+    color: white;
+    padding: 35px 28px;
+}
 
-        .sidebar {
-            background: #17212b;
-            color: white;
-            padding: 35px 25px;
-        }
+.profile-photo {
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 25px;
+    border: 4px solid #fff;
+}
 
-        .profile {
-            text-align: center;
-            margin-bottom: 30px;
-        }
+.sidebar h3 {
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    margin-top: 28px;
+    margin-bottom: 10px;
+    color: #bfc7d4;
+    text-transform: uppercase;
+}
 
-        .profile img {
-            width: 135px;
-            height: 135px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 4px solid white;
-            margin-bottom: 15px;
-        }
+.contact {
+    font-size: 14px;
+    line-height: 1.7;
+}
 
-        .profile h1 {
-            font-size: 23px;
-            line-height: 1.25;
-        }
+.contact div {
+    margin-bottom: 5px;
+}
 
-        .profile p {
-            margin-top: 8px;
-            font-size: 13px;
-            color: #d7dde3;
-        }
+.skill-group {
+    margin-bottom: 20px;
+}
 
-        .side-section {
-            margin-top: 28px;
-        }
+.skill-group strong {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
 
-        .side-section h2 {
-            font-size: 15px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border-bottom: 1px solid #596673;
-            padding-bottom: 7px;
-            margin-bottom: 12px;
-        }
+.skill-group span {
+    display: block;
+    color: #d4d9e1;
+    font-size: 13px;
+    line-height: 1.65;
+}
 
-        .side-section ul {
-            list-style: none;
-        }
+/* ================= MAIN ================= */
 
-        .side-section li {
-            font-size: 13px;
-            margin-bottom: 8px;
-            color: #e4e8eb;
-        }
+.main {
+    padding: 42px 48px;
+}
 
-        .contact p {
-            font-size: 13px;
-            margin-bottom: 7px;
-            word-break: break-word;
-        }
+.header {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 24px;
+    margin-bottom: 28px;
+}
 
-        /* ================= MAIN ================= */
+.header h1 {
+    margin: 0;
+    font-size: 34px;
+    letter-spacing: 0.5px;
+    color: #202632;
+}
 
-        .main {
-            padding: 40px 45px;
-        }
+.header h2 {
+    margin: 6px 0 18px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #5d4a91;
+    letter-spacing: 0.8px;
+}
 
-        .header h1 {
-            font-size: 31px;
-            color: #17212b;
-            line-height: 1.2;
-            margin-bottom: 8px;
-        }
+/* ================= AI FOOTER TOP ================= */
 
-        .header .subtitle {
-            font-size: 17px;
-            font-weight: bold;
-            color: #2878b5;
-            margin-bottom: 25px;
-        }
+.ai-intro {
+    background: linear-gradient(135deg, #f7f3fc, #faf9fd);
+    border-left: 4px solid #6c4bb3;
+    padding: 13px 18px;
+    margin-top: 12px;
+    border-radius: 5px;
+}
 
-        .section {
-            margin-top: 30px;
-        }
+.ai-intro p {
+    margin: 3px 0;
+    font-size: 13px;
+    color: #555;
+}
 
-        .section-title {
-            font-size: 19px;
-            text-transform: uppercase;
-            color: #17212b;
-            border-bottom: 2px solid #2878b5;
-            padding-bottom: 6px;
-            margin-bottom: 18px;
-        }
+.ai-intro p:first-child {
+    font-weight: 500;
+}
 
-        .profile-text {
-            font-size: 14px;
-            text-align: justify;
-        }
+/* ================= SECTIONS ================= */
 
-        /* ================= EXPERTISE ================= */
+.section {
+    margin-bottom: 32px;
+}
 
-        .expertise-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 18px;
-        }
+.section-title {
+    font-size: 18px;
+    color: #202632;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-left: 5px solid #6c4bb3;
+    padding-left: 12px;
+    margin-bottom: 17px;
+}
 
-        .expertise-card {
-            border-left: 4px solid #2878b5;
-            padding: 12px 15px;
-            background: #f7f9fb;
-        }
+/* ================= PROFILE ================= */
 
-        .expertise-card.ai {
-            border-left-color: #6c4bb3;
-        }
+.profile {
+    font-size: 15px;
+    color: #444;
+}
 
-        .expertise-card h3 {
-            font-size: 15px;
-            margin-bottom: 8px;
-            color: #17212b;
-        }
+.profile strong {
+    color: #202632;
+}
 
-        .expertise-card ul {
-            padding-left: 17px;
-        }
+/* ================= EXPERTISE CARDS ================= */
 
-        .expertise-card li {
-            font-size: 13px;
-            margin-bottom: 4px;
-        }
+.expertise-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
 
-        /* ================= EXPERIENCE ================= */
+.expertise-card {
+    border: 1px solid #e4e5e9;
+    border-radius: 7px;
+    padding: 17px;
+    background: #fafafa;
+}
 
-        .experience {
-            margin-bottom: 25px;
-        }
+.expertise-card h3 {
+    margin: 0 0 8px;
+    font-size: 14px;
+    color: #5d4a91;
+}
 
-        .experience-header {
-            display: flex;
-            justify-content: space-between;
-            gap: 15px;
-            align-items: baseline;
-        }
+.expertise-card p {
+    margin: 0;
+    font-size: 13px;
+    color: #555;
+    line-height: 1.6;
+}
 
-        .experience h3 {
-            font-size: 17px;
-            color: #17212b;
-        }
+/* ================= EXPERIENCE ================= */
 
-        .experience .date {
-            font-size: 13px;
-            color: #666;
-            white-space: nowrap;
-        }
+.experience {
+    margin-bottom: 25px;
+}
 
-        .company {
-            color: #2878b5;
-            font-size: 14px;
-            font-weight: bold;
-            margin: 3px 0 8px;
-        }
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+}
 
-        .experience ul {
-            padding-left: 20px;
-        }
+.experience h3 {
+    margin: 0;
+    font-size: 17px;
+    color: #202632;
+}
 
-        .experience li {
-            font-size: 13.5px;
-            margin-bottom: 6px;
-        }
+.company {
+    color: #6c4bb3;
+    font-weight: 600;
+    margin-top: 2px;
+}
 
-        .highlight {
-            font-weight: bold;
-            color: #17212b;
-        }
+.date {
+    color: #777;
+    font-size: 13px;
+    white-space: nowrap;
+}
 
-        .ai-highlight {
-            border-left: 4px solid #6c4bb3;
-            background: #f7f4fc;
-            padding: 10px 14px;
-            margin-top: 10px;
-        }
+.experience ul {
+    margin: 9px 0 0;
+    padding-left: 20px;
+}
 
-        /* ================= EDUCATION ================= */
+.experience li {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #444;
+}
 
-        .education-item {
-            margin-bottom: 15px;
-        }
+/* ================= FORMATION ================= */
 
-        .education-item h3 {
-            font-size: 15px;
-        }
+.education-item {
+    margin-bottom: 12px;
+}
 
-        .education-item p {
-            font-size: 13px;
-            color: #555;
-        }
+.education-item strong {
+    color: #202632;
+}
 
-        /* ================= AI FOOTER ================= */
+.education-year {
+    color: #6c4bb3;
+    font-weight: 600;
+    margin-right: 8px;
+}
 
-        .ai-footer {
-            margin-top: 35px;
-            padding: 14px 18px;
-            background: #f7f4fc;
-            border-left: 4px solid #6c4bb3;
-            text-align: center;
-            color: #555;
-            font-size: 12px;
-        }
+/* ================= AI FOOTER ================= */
 
-        .ai-footer p {
-            margin: 4px 0;
-        }
+.ai-footer {
+    margin-top: 35px;
+    padding: 18px 20px;
+    background: #f7f3fc;
+    border-radius: 7px;
+    border: 1px solid #e4dff0;
+    text-align: center;
+}
 
-        /* ================= FOOTER ================= */
+.ai-footer p {
+    margin: 5px 0;
+    color: #625878;
+    font-size: 13px;
+}
 
-        .footer {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 11px;
-            color: #888;
-        }
+/* ================= FOOTER ================= */
 
-        /* ================= PRINT ================= */
+.footer {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    color: #888;
+    font-size: 12px;
+}
 
-        @media print {
-            body {
-                background: white;
-            }
+/* ================= RESPONSIVE ================= */
 
-            .container {
-                margin: 0;
-                box-shadow: none;
-                max-width: none;
-            }
+@media (max-width: 850px) {
 
-            .sidebar {
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-            }
-        }
+    .cv {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
 
-        /* ================= MOBILE ================= */
+    .sidebar {
+        text-align: center;
+    }
 
-        @media (max-width: 800px) {
+    .skill-group span,
+    .skill-group strong {
+        text-align: center;
+    }
 
-            .container {
-                grid-template-columns: 1fr;
-                margin: 0;
-            }
+    .main {
+        padding: 30px 25px;
+    }
 
-            .sidebar {
-                padding: 25px;
-            }
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
 
-            .main {
-                padding: 30px 25px;
-            }
+    .experience-header {
+        flex-direction: column;
+        gap: 3px;
+    }
 
-            .expertise-grid {
-                grid-template-columns: 1fr;
-            }
+    .date {
+        white-space: normal;
+    }
+}
 
-            .experience-header {
-                flex-direction: column;
-                gap: 2px;
-            }
+/* ================= PRINT ================= */
 
-            .header h1 {
-                font-size: 25px;
-            }
-        }
-    </style>
+@media print {
+
+    body {
+        background: white;
+    }
+
+    .cv {
+        margin: 0;
+        box-shadow: none;
+        max-width: none;
+    }
+
+    .sidebar {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .ai-intro,
+    .ai-footer,
+    .expertise-card {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+}
+</style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="cv">
 
-    <!-- ================= SIDEBAR ================= -->
+<!-- ================= SIDEBAR ================= -->
 
-    <aside class="sidebar">
+<aside class="sidebar">
+
+    <img src="photo-profil.png"
+         alt="Mohamed Ali BEN JABER"
+         class="profile-photo">
+
+    <h3>Contact</h3>
+
+    <div class="contact">
+        <div>📍 Montigny-le-Bretonneux, Île-de-France</div>
+        <div>📞 07.51.18.68.95</div>
+        <div>✉️ mali.benjaber@gmail.com</div>
+    </div>
+
+
+    <h3>ADAS & Automobile</h3>
+
+    <div class="skill-group">
+        <span>
+            Function Ownership<br>
+            ADAS Camera<br>
+            Calibration<br>
+            Diagnostic / UDS<br>
+            System Engineering<br>
+            Ticket Management
+        </span>
+    </div>
+
+
+    <h3>IA & Automation</h3>
+
+    <div class="skill-group">
+        <span>
+            Generative AI<br>
+            AI-Assisted Development<br>
+            Engineering Automation<br>
+            Process Digitalization<br>
+            Rapid Prototyping<br>
+            Engineering Productivity
+        </span>
+    </div>
+
+
+    <h3>Ingénierie Système</h3>
+
+    <div class="skill-group">
+        <span>
+            Requirements Engineering<br>
+            DOORS<br>
+            Cycle en V<br>
+            Agile / Scrum
+        </span>
+    </div>
+
+
+    <h3>Qualité & Process</h3>
+
+    <div class="skill-group">
+        <span>
+            Automotive SPICE<br>
+            SWQA<br>
+            Process Engineering<br>
+            Continuous Improvement
+        </span>
+    </div>
+
+
+    <h3>Développement</h3>
+
+    <div class="skill-group">
+        <span>
+            Google Apps Script<br>
+            Web Apps<br>
+            JavaScript / HTML / CSS<br>
+            Python<br>
+            C / Assembleur<br>
+            MATLAB / Simulink<br>
+            MXAM<br>
+            LabVIEW
+        </span>
+    </div>
+
+
+    <h3>Langues</h3>
+
+    <div class="skill-group">
+        <span>
+            Français — Bilingue<br>
+            Anglais — Professionnel<br>
+            Arabe — Langue maternelle
+        </span>
+    </div>
+
+</aside>
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="main">
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <h1>Mohamed Ali BEN JABER</h1>
+
+        <h2>
+            SENIOR ADAS SYSTEM ENGINEER
+            <br>
+            <span style="font-size:15px;">
+                FUNCTION OWNER | AI & AUTOMATION | ASPICE
+            </span>
+        </h2>
+
+        <div class="ai-intro">
+
+            <p>
+                🤖 Ce CV a été co-développé avec une IA.
+                Promis, l'expérience professionnelle est bien humaine.
+            </p>
+
+            <p>
+                🤖 Écrit par un humain. Optimisé avec une IA.
+                Relu par… un humain.
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- PROFIL -->
+
+    <section class="section">
+
+        <h2 class="section-title">Profil</h2>
 
         <div class="profile">
 
-            <img src="photo-profil.png"
-                 alt="Mohamed Ali BEN JABER">
-
-            <h1>
-                Mohamed Ali<br>
-                BEN JABER
-            </h1>
+            <p>
+                Ingénieur Systèmes ADAS avec plus de
+                <strong>10 ans d'expérience dans l'industrie automobile</strong>,
+                spécialisé dans le pilotage de fonctions ADAS,
+                l'ingénierie système, la gestion des exigences et
+                l'amélioration des processus R&D.
+            </p>
 
             <p>
-                Docteur en Automatique<br>
-                Ingénieur Systèmes ADAS
-            </p>
-
-        </div>
-
-
-        <div class="side-section contact">
-
-            <h2>Contact</h2>
-
-            <p>📍 Montigny-le-Bretonneux, Île-de-France</p>
-            <p>📞 07.51.18.68.95</p>
-            <p>✉️ mali.benjaber@gmail.com</p>
-
-        </div>
-
-
-        <div class="side-section">
-
-            <h2>ADAS & Automobile</h2>
-
-            <ul>
-                <li>Function Ownership</li>
-                <li>ADAS Camera</li>
-                <li>Calibration</li>
-                <li>Diagnostic / UDS</li>
-                <li>System Engineering</li>
-                <li>Ticket Management</li>
-            </ul>
-
-        </div>
-
-
-        <div class="side-section">
-
-            <h2>IA & Automation</h2>
-
-            <ul>
-                <li>Generative AI</li>
-                <li>AI-Assisted Development</li>
-                <li>Engineering Automation</li>
-                <li>Process Digitalization</li>
-                <li>Rapid Prototyping</li>
-                <li>Engineering Productivity</li>
-            </ul>
-
-        </div>
-
-
-        <div class="side-section">
-
-            <h2>Ingénierie Système</h2>
-
-            <ul>
-                <li>Requirements Engineering</li>
-                <li>DOORS</li>
-                <li>Cycle en V</li>
-                <li>Agile / Scrum</li>
-            </ul>
-
-        </div>
-
-
-        <div class="side-section">
-
-            <h2>Qualité & Process</h2>
-
-            <ul>
-                <li>Automotive SPICE</li>
-                <li>SWQA</li>
-                <li>Process Engineering</li>
-                <li>Continuous Improvement</li>
-            </ul>
-
-        </div>
-
-
-        <div class="side-section">
-
-            <h2>Développement</h2>
-
-            <ul>
-                <li>Google Apps Script</li>
-                <li>Web Apps</li>
-                <li>JavaScript / HTML / CSS</li>
-                <li>Python</li>
-                <li>C / Assembleur</li>
-                <li>MATLAB / Simulink</li>
-                <li>MXAM</li>
-                <li>LabVIEW</li>
-            </ul>
-
-        </div>
-
-
-        <div class="side-section">
-
-            <h2>Langues</h2>
-
-            <ul>
-                <li>🇫🇷 Français — Bilingue</li>
-                <li>🇬🇧 Anglais — Professionnel</li>
-                <li>🇹🇳 Arabe — Langue maternelle</li>
-            </ul>
-
-        </div>
-
-    </aside>
-
-
-    <!-- ================= MAIN ================= -->
-
-    <main class="main">
-
-        <header class="header">
-
-            <h1>
-                SENIOR ADAS SYSTEM ENGINEER
-            </h1>
-
-            <div class="subtitle">
-                FUNCTION OWNER | AI & AUTOMATION | ASPICE
-            </div>
-
-        </header>
-
-
-        <!-- ================= PROFIL ================= -->
-
-        <section class="section">
-
-            <h2 class="section-title">
-                Profil
-            </h2>
-
-            <p class="profile-text">
-
-                Ingénieur Systèmes ADAS avec plus de 10 ans d'expérience
-                dans l'industrie automobile, spécialisé dans le pilotage
-                de fonctions ADAS, l'ingénierie système, la gestion des
-                exigences et l'amélioration des processus R&D.
-
-                <br><br>
-
-                Actuellement
-                <span class="highlight">
-                    Function Owner ADAS chez Valeo
-                </span>,
+                Actuellement <strong>Function Owner ADAS chez Valeo</strong>,
                 je pilote le cycle de vie de fonctions de calibration caméra,
-                de la spécification à la validation, tout en assurant la
-                coordination transverse et le suivi des anomalies.
-
-                <br><br>
-
-                Je m'appuie également sur
-                <span class="highlight">
-                    l'IA générative et le développement d'outils internes
-                </span>
-                pour automatiser les activités d'ingénierie, digitaliser
-                les processus et améliorer la productivité des équipes R&D.
-
+                de la spécification à la validation, tout en assurant
+                la coordination transverse et le suivi des anomalies.
             </p>
 
-        </section>
+            <p>
+                Je m'appuie également sur
+                <strong>l'IA générative et le développement d'outils internes</strong>
+                pour automatiser les activités d'ingénierie,
+                digitaliser les processus et améliorer la productivité
+                des équipes R&D.
+            </p>
+
+        </div>
+
+    </section>
 
 
-        <!-- ================= EXPERTISES ================= -->
+    <!-- EXPERTISE -->
 
-        <section class="section">
+    <section class="section">
 
-            <h2 class="section-title">
-                Expertises
-            </h2>
+        <h2 class="section-title">Expertises clés</h2>
 
-            <div class="expertise-grid">
+        <div class="expertise-grid">
 
+            <div class="expertise-card">
 
-                <div class="expertise-card">
+                <h3>ADAS & SYSTEM ENGINEERING</h3>
 
-                    <h3>
-                        ADAS & SYSTEM ENGINEERING
-                    </h3>
-
-                    <ul>
-                        <li>Function Ownership</li>
-                        <li>Ingénierie des exigences & DOORS</li>
-                        <li>Calibration caméra ADAS</li>
-                        <li>System Engineering</li>
-                        <li>Cycle en V</li>
-                        <li>Gestion des anomalies</li>
-                    </ul>
-
-                </div>
-
-
-                <div class="expertise-card ai">
-
-                    <h3>
-                        AI & AUTOMATION
-                    </h3>
-
-                    <ul>
-                        <li>Generative AI / AI-Assisted Development</li>
-                        <li>Automatisation des processus R&D</li>
-                        <li>Digitalisation des activités d'ingénierie</li>
-                        <li>Google Apps Script / Web Apps</li>
-                        <li>Rapid Prototyping</li>
-                        <li>Engineering Productivity</li>
-                    </ul>
-
-                </div>
-
-
-                <div class="expertise-card">
-
-                    <h3>
-                        QUALITÉ & PROCESS
-                    </h3>
-
-                    <ul>
-                        <li>Automotive SPICE</li>
-                        <li>SWQA</li>
-                        <li>Process Engineering</li>
-                        <li>Agile / Scrum</li>
-                        <li>Continuous Improvement</li>
-                    </ul>
-
-                </div>
-
-
-                <div class="expertise-card">
-
-                    <h3>
-                        PROGRAMMATION & OUTILS
-                    </h3>
-
-                    <ul>
-                        <li>Python / C / JavaScript</li>
-                        <li>HTML / CSS</li>
-                        <li>Google Apps Script</li>
-                        <li>MATLAB / Simulink</li>
-                        <li>MXAM / LabVIEW</li>
-                    </ul>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= EXPERIENCE ================= -->
-
-        <section class="section">
-
-            <h2 class="section-title">
-                Expérience professionnelle
-            </h2>
-
-
-            <!-- VALEO FUNCTION OWNER -->
-
-            <div class="experience">
-
-                <div class="experience-header">
-
-                    <h3>
-                        Function Owner ADAS & Ticket Manager
-                    </h3>
-
-                    <span class="date">
-                        Depuis 2024
-                    </span>
-
-                </div>
-
-                <div class="company">
-                    VALEO
-                </div>
-
-                <ul>
-
-                    <li>
-                        <span class="highlight">
-                            Function Ownership :
-                        </span>
-                        pilotage du cycle de vie de fonctions de calibration
-                        caméra ADAS, de la spécification à la validation.
-                    </li>
-
-                    <li>
-                        <span class="highlight">
-                            System Engineering :
-                        </span>
-                        définition, rédaction et gestion des exigences
-                        système et logiciel sous DOORS.
-                    </li>
-
-                    <li>
-                        <span class="highlight">
-                            Ticket Management :
-                        </span>
-                        analyse, priorisation et coordination de la résolution
-                        des anomalies.
-                    </li>
-
-                    <li>
-                        <span class="highlight">
-                            Coordination transverse :
-                        </span>
-                        collaboration avec les équipes système, logiciel,
-                        validation et calibration.
-                    </li>
-
-                    <li>
-                        <span class="highlight">
-                            Reporting & KPIs :
-                        </span>
-                        suivi des indicateurs qualité et avancement.
-                    </li>
-
-                </ul>
-
-
-                <div class="ai-highlight">
-
-                    <ul>
-
-                        <li>
-                            <span class="highlight">
-                                IA & Automation :
-                            </span>
-                            utilisation de l'IA générative comme accélérateur
-                            de développement pour concevoir des outils internes
-                            d'ingénierie et automatiser des activités R&D.
-                        </li>
-
-                        <li>
-                            Développement de
-                            <span class="highlight">
-                                Web Apps Google Apps Script
-                            </span>
-                            permettant de digitaliser des processus techniques,
-                            automatiser des tâches répétitives et améliorer
-                            l'efficacité opérationnelle.
-                        </li>
-
-                    </ul>
-
-                </div>
+                <p>
+                    Function Ownership · ADAS Camera · Calibration ·
+                    System Engineering · Requirements · DOORS ·
+                    Diagnostic / UDS
+                </p>
 
             </div>
 
 
-            <!-- VALEO PROCESS -->
+            <div class="expertise-card">
 
-            <div class="experience">
+                <h3>AI & AUTOMATION</h3>
 
-                <div class="experience-header">
-
-                    <h3>
-                        Ingénieur R&D Process Systèmes
-                    </h3>
-
-                    <span class="date">
-                        Avril 2022 – 2024
-                    </span>
-
-                </div>
-
-                <div class="company">
-                    VALEO
-                </div>
-
-                <ul>
-
-                    <li>
-                        <span class="highlight">
-                            Process Engineering :
-                        </span>
-                        amélioration et digitalisation des processus
-                        de développement R&D.
-                    </li>
-
-                    <li>
-                        Conception et déploiement d'outils destinés à réduire
-                        les tâches manuelles et améliorer l'efficacité
-                        des équipes.
-                    </li>
-
-                    <li>
-                        <span class="highlight">
-                            Coaching & Quality :
-                        </span>
-                        accompagnement des équipes R&D systèmes dans
-                        l'application des standards qualité.
-                    </li>
-
-                    <li>
-                        <span class="highlight">
-                            Automotive SPICE :
-                        </span>
-                        préparation et pilotage d'évaluations de maturité
-                        ayant contribué à l'atteinte du niveau ASPICE L2.
-                    </li>
-
-                    <li>
-                        Identification des opportunités d'amélioration et
-                        déploiement de solutions adaptées aux besoins
-                        des équipes R&D.
-                    </li>
-
-                </ul>
+                <p>
+                    Generative AI · AI-Assisted Development ·
+                    Engineering Automation · Process Digitalization ·
+                    Rapid Prototyping · Engineering Productivity
+                </p>
 
             </div>
 
 
-            <!-- EXPLEO -->
+            <div class="expertise-card">
 
-            <div class="experience">
+                <h3>QUALITÉ & PROCESS</h3>
 
-                <div class="experience-header">
+                <p>
+                    Automotive SPICE · SWQA · Cycle en V ·
+                    Agile / Scrum · Process Improvement ·
+                    Continuous Improvement
+                </p>
 
-                    <h3>
-                        Ingénieur SWQA & Support RFQ
-                    </h3>
+            </div>
 
-                    <span class="date">
-                        Janvier 2019 – Avril 2022
-                    </span>
 
+            <div class="expertise-card">
+
+                <h3>PROGRAMMATION & OUTILS</h3>
+
+                <p>
+                    Google Apps Script · Web Apps · JavaScript ·
+                    HTML/CSS · Python · C · MATLAB/Simulink · MXAM
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+
+    <section class="section">
+
+        <h2 class="section-title">Expériences professionnelles</h2>
+
+
+        <div class="experience">
+
+            <div class="experience-header">
+
+                <div>
+                    <h3>Function Owner ADAS & Ticket Manager</h3>
+                    <div class="company">VALEO</div>
                 </div>
 
-                <div class="company">
-                    EXPLEO — Pour le compte de RENAULT
+                <div class="date">
+                    2024 – Aujourd'hui
                 </div>
 
-                <ul>
+            </div>
 
-                    <li>
-                        <span class="highlight">
-                            Software Quality Assurance :
-                        </span>
-                        évaluation de la qualité des logiciels embarqués
-                        sur l'ensemble du cycle en V.
-                    </li>
+            <ul>
 
-                    <li>
-                        <span class="highlight">
-                            Automotive SPICE :
-                        </span>
-                        accompagnement des équipes de développement
-                        dans l'application des processus et pratiques ASPICE.
-                    </li>
+                <li>
+                    <strong>Function Ownership :</strong>
+                    pilotage du cycle de vie complet d'une fonction
+                    de calibration caméra ADAS, de la spécification
+                    à la validation.
+                </li>
 
-                    <li>
-                        <span class="hi
+                <li>
+                    <strong>System Engineering :</strong>
+                    définition, rédaction, analyse et gestion des
+                    exigences système et logicielles sous DOORS.
+                </li>
+
+                <li>
+                    <strong>Calibration ADAS :</strong>
+                    pilotage des activités de calibration et suivi
+                    des performances de la fonction.
+                </li>
+
+                <li>
+                    <strong>Ticket Management :</strong>
+                    triage, analyse, priorisation et affectation
+                    des anomalies aux équipes concernées.
+                </li>
+
+                <li>
+                    <strong>Coordination transverse :</strong>
+                    interface entre les équipes système, software,
+                    calibration et validation.
+                </li>
+
+                <li>
+                    <strong>Reporting :</strong>
+                    suivi des KPI, des délais de résolution et de
+                    la maturité de la fonction.
+                </li>
+
+                <li>
+                    <strong>IA & Automation :</strong>
+                    utilisation de l'IA générative comme accélérateur
+                    de développement pour concevoir des outils internes
+                    d'ingénierie et automatiser des activités R&D.
+                </li>
+
+                <li>
+                    <strong>Digitalisation :</strong>
+                    développement de Web Apps Google Apps Script
+                    permettant de digitaliser des processus techniques,
+                    automatiser des tâches répétitives et améliorer
+                    l'efficacité opérationnelle.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="experience">
+
+            <div class="experience-header">
+
+                <div>
+                    <h3>Ingénieur R&D Process & System Engineering</h3>
+                    <div class="company">VALEO</div>
+                </div>
+
+                <div class="date">
+                    Avr. 2022 – 2024
+                </div>
+
+            </div>
+
+            <ul>
+
+                <li>
+                    <strong>Process & amélioration continue :</strong>
+                    déploiement d'outils et d'infrastructures
+                    améliorant l'efficacité des activités R&D.
+                </li>
+
+                <li>
+                    <strong>Coaching & qualité :</strong>
+                    accompagnement des équipes système dans
+                    l'application des processus et standards qualité.
+                </li>
+
+                <li>
+                    <strong>Automotive SPICE :</strong>
+                    préparation et pilotage des évaluations de maturité
+                    et suivi des actions d'amélioration jusqu'à
+                    l'obtention du niveau ASPICE L2.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="experience">
+
+            <div class="experience-header">
+
+                <div>
+                    <h3>Ingénieur Software Quality & Support RFQ</h3>
+                    <div class="company">
+                        EXPLEO — Pour le compte de RENAULT
+                    </div>
+                </div>
+
+                <div class="date">
+                    Jan. 2019 – Avr. 2022
+                </div>
+
+            </div>
+
+            <ul>
+
+                <li>
+                    <strong>Software Quality Assurance :</strong>
+                    audit de la qualité des logiciels embarqués
+                    sur l'ensemble du cycle en V et suivi des
+                    indicateurs de performance.
+                </li>
+
+                <li>
+                    <strong>ASPICE :</strong>
+                    accompagnement et coaching des équipes de
+                    développement dans l'application des processus.
+                </li>
+
+                <li>
+                    <strong>Support RFQ :</strong>
+                    contribution aux appels d'offres, préparation
+                    des dossiers techniques et accompagnement dans
+                    l'évaluation des fournisseurs.
+                </li>
+
+                <li>
+                    <strong>Model-Based Design :</strong>
+                    correction et optimisation de modèles
+                    MATLAB/Simulink via MXAM.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="experience">
+
+            <div class="experience-header">
+
+                <div>
+                    <h3>Attaché de Recherche et d'Enseignement</h3>
+                    <div class="company">
+                        POLYTECH MARSEILLE / LABORATOIRE LSIS
+                    </div>
+                </div>
+
+                <div class="date">
+                    Déc. 2016 – Août 2018
+                </div>
+
+            </div>
+
+            <ul>
+
+                <li>
+                    <strong>Enseignement :</strong>
+                    cours, TD et TP en automatique et informatique
+                    industrielle.
+                </li>
+
+                <li>
+                    <strong>Recherche :</strong>
+                    modélisation et optimisation de systèmes complexes.
+                </li>
+
+                <li>
+                    <strong>Encadrement :</strong>
+                    accompagnement et évaluation d'étudiants sur
+                    leurs projets de fin d'études.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="experience">
+
+            <div class="experience-header">
+
+                <div>
+                    <h3>Ingénieur R&D / Doctorant</h3>
+                    <div class="company">
+                        STMicroelectronics & LABORATOIRE LSIS
+                    </div>
+                </div>
+
+                <div class="date">
+                    Nov. 2013 – Nov. 2016
+                </div>
+
+            </div>
+
+            <ul>
+
+                <li>
+                    <strong>Projet européen INTEGRATE :</strong>
+                    développement de méthodes d'estimation de données
+                    par métrologie virtuelle.
+                </li>
+
+                <li>
+                    <strong>Optimisation :</strong>
+                    développement et optimisation de régulateurs
+                    Run-to-Run appliqués à la fabrication de
+                    semi-conducteurs.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- FORMATION -->
+
+    <section class="section">
+
+        <h2 class="section-title">Formation</h2>
+
+        <div class="education-item">
+
+            <span class="education-year">2018</span>
+
+            <strong>Doctorat en Automatique</strong>
+
+            — Université d'Aix-Marseille
+
+        </div>
+
+
+        <div class="education-item">
+
+            <span class="education-year">2013</span>
+
+            <strong>Diplôme d'Ingénieur en Automatique</strong>
+
+            — École Nationale d'Ingénieurs de Gabès — Tunisie
+
+        </div>
+
+    </section>
+
+
+    <!-- AI FOOTER -->
+
+    <div class="ai-footer">
+
+        <p>
+            🤖 Ce CV a été co-développé avec une IA.
+            Promis, l'expérience professionnelle est bien humaine.
+        </p>
+
+        <p>
+            🤖 Écrit par un humain. Optimisé avec une IA.
+            Relu par… un humain.
+        </p>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        Mohamed Ali BEN JABER · Senior ADAS System Engineer ·
+        AI & Automation
+
+    </footer>
+
+</main>
+
+</div>
+
+</body>
+</html>
