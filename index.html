@@ -1,341 +1,812 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CV Mohamed Ali BEN JABER</title>
-<!-- Importation de polices modernes -->
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-<!-- Importation d'icônes -->
+<title>CV Mohamed Ali BEN JABER | Senior ADAS System Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
+    * {
+        box-sizing: border-box;
+    }
+
     body {
         font-family: 'Open Sans', sans-serif;
-        background-color: #e2e8f0; /* Fond gris clair pour faire ressortir le CV */
+        background-color: #e2e8f0;
         color: #334155;
         margin: 0;
-        padding: 40px 20px;
+        padding: 35px 20px;
         display: flex;
         justify-content: center;
     }
 
-    * { box-sizing: border-box; }
-
-    /* Le conteneur principal du CV */
     .cv-container {
         width: 100%;
         max-width: 1050px;
         background-color: #ffffff;
         display: flex;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* Ombre élégante */
-        border-radius: 8px; /* Coins légèrement arrondis */
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.10);
+        border-radius: 8px;
         overflow: hidden;
     }
 
-    /* Barre latérale (Sidebar) */
+    /* =========================
+       SIDEBAR
+       ========================= */
+
     .sidebar {
-        width: 32%;
-        background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%); /* Dégradé sombre */
+        width: 31%;
+        background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
         color: #f8fafc;
-        padding: 50px 35px;
+        padding: 42px 30px;
     }
 
     .profile-photo {
-        width: 160px;
-        height: 160px;
+        width: 145px;
+        height: 145px;
         object-fit: cover;
-        object-position: top; /* Aligne l'image vers le haut pour ne pas couper la tête */
+        object-position: top;
         border-radius: 50%;
         border: 4px solid rgba(255, 255, 255, 0.15);
         display: block;
-        margin: 0 auto 35px auto;
+        margin: 0 auto 28px auto;
         box-shadow: 0 8px 16px rgba(0,0,0,0.3);
     }
 
-    /* Section Contact Sidebar */
     .contact-item {
         display: flex;
-        align-items: center;
-        margin-bottom: 18px;
-        font-size: 14px;
+        align-items: flex-start;
+        margin-bottom: 15px;
+        font-size: 13px;
         color: #cbd5e1;
         line-height: 1.4;
     }
+
     .contact-item i {
-        width: 25px;
-        font-size: 18px;
-        color: #38bdf8; /* Bleu clair pour les icônes */
+        width: 23px;
+        flex-shrink: 0;
+        font-size: 16px;
+        color: #38bdf8;
         text-align: center;
-        margin-right: 12px;
+        margin-right: 10px;
+        margin-top: 2px;
     }
+
     .contact-item a {
         color: #cbd5e1;
         text-decoration: none;
-        transition: color 0.3s;
     }
-    .contact-item a:hover { color: #38bdf8; }
+
+    .contact-item a:hover {
+        color: #38bdf8;
+    }
 
     .sidebar h2 {
         font-family: 'Poppins', sans-serif;
-        font-size: 16px;
+        font-size: 15px;
         color: #f1f5f9;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-        padding-bottom: 10px;
-        margin-top: 40px;
-        margin-bottom: 20px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.10);
+        padding-bottom: 9px;
+        margin-top: 34px;
+        margin-bottom: 17px;
         text-transform: uppercase;
-        letter-spacing: 1px;
+        letter-spacing: 0.8px;
     }
 
-    .sidebar-block { margin-bottom: 25px; }
-    .sidebar-title { font-weight: 600; color: #38bdf8; font-size: 14px; margin-bottom: 5px; }
-    .sidebar-text { font-size: 13.5px; color: #94a3b8; line-height: 1.6; }
+    .sidebar-block {
+        margin-bottom: 19px;
+    }
 
-    /* Contenu principal (Main Content) */
+    .sidebar-title {
+        font-weight: 600;
+        color: #38bdf8;
+        font-size: 13px;
+        margin-bottom: 4px;
+    }
+
+    .sidebar-text {
+        font-size: 12.5px;
+        color: #94a3b8;
+        line-height: 1.55;
+    }
+
+    /* =========================
+       MAIN CONTENT
+       ========================= */
+
     .main-content {
-        width: 68%;
-        padding: 55px 50px;
+        width: 69%;
+        padding: 45px 45px 40px 45px;
     }
 
     .name-header h1 {
         font-family: 'Poppins', sans-serif;
-        margin: 0 0 5px 0;
-        font-size: 40px;
+        margin: 0 0 4px 0;
+        font-size: 36px;
         font-weight: 700;
-        letter-spacing: 1px;
+        letter-spacing: 0.5px;
         text-transform: uppercase;
         color: #0f172a;
     }
+
     .name-header .title {
         font-family: 'Poppins', sans-serif;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
         color: #0284c7;
-        letter-spacing: 1px;
-        margin-bottom: 30px;
+        letter-spacing: 0.8px;
+        line-height: 1.4;
+        margin-bottom: 24px;
     }
 
     .summary {
         background-color: #f0f9ff;
-        padding: 20px 25px;
+        padding: 17px 21px;
         border-left: 4px solid #0284c7;
-        border-radius: 0 8px 8px 0;
-        font-size: 15px;
-        line-height: 1.7;
+        border-radius: 0 7px 7px 0;
+        font-size: 13.5px;
+        line-height: 1.6;
         color: #475569;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
     .main-content h2 {
         font-family: 'Poppins', sans-serif;
-        font-size: 22px;
+        font-size: 19px;
         color: #0f172a;
         border-bottom: 2px solid #e2e8f0;
-        padding-bottom: 10px;
+        padding-bottom: 8px;
         margin-top: 0;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
         text-transform: uppercase;
         display: flex;
         align-items: center;
     }
+
     .main-content h2 i {
         color: #0284c7;
-        margin-right: 12px;
-        font-size: 20px;
+        margin-right: 11px;
+        font-size: 17px;
     }
 
-    /* Expériences */
-    .job-item { margin-bottom: 30px; }
+    /* =========================
+       EXPERIENCES
+       ========================= */
+
+    .job-item {
+        margin-bottom: 23px;
+    }
+
     .job-header {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        margin-bottom: 5px;
+        gap: 12px;
+        margin-bottom: 4px;
     }
+
     .job-title-cell {
         font-family: 'Poppins', sans-serif;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
         color: #0369a1;
+        line-height: 1.35;
     }
+
     .job-date-cell {
-        font-size: 14px;
+        white-space: nowrap;
+        font-size: 11.5px;
         color: #64748b;
         font-weight: 600;
         background: #f1f5f9;
-        padding: 4px 10px;
+        padding: 4px 9px;
         border-radius: 20px;
     }
+
     .company {
-        font-size: 15px;
+        font-size: 13px;
         font-weight: 700;
         color: #334155;
-        margin-bottom: 12px;
+        margin-bottom: 8px;
         display: flex;
         align-items: center;
     }
-    .company i { margin-right: 8px; color: #94a3b8; font-size: 14px; }
-    
+
+    .company i {
+        margin-right: 7px;
+        color: #94a3b8;
+        font-size: 12px;
+    }
+
     .job-item ul {
         margin: 0;
-        padding-left: 20px;
-        font-size: 14.5px;
-        line-height: 1.6;
+        padding-left: 18px;
+        font-size: 12.5px;
+        line-height: 1.5;
         color: #475569;
     }
-    .job-item li { margin-bottom: 8px; }
-    .job-item li strong { color: #334155; }
 
-    /* Formation */
-    .formation-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
-    .formation-table td { padding: 15px 0; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
-    .formation-table tr:last-child td { border-bottom: none; }
-    .formation-table .date { font-weight: 700; color: #0284c7; width: 15%; font-size: 15px;}
-    .formation-table .deg { font-size: 15px; color: #334155; font-weight: 600; display: block; margin-bottom: 3px;}
-    .formation-table .school { font-size: 14px; color: #64748b; }
+    .job-item li {
+        margin-bottom: 5px;
+    }
 
+    .job-item li strong {
+        color: #334155;
+    }
+
+    /* =========================
+       FORMATION
+       ========================= */
+
+    .formation-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 5px;
+    }
+
+    .formation-table td {
+        padding: 10px 0;
+        border-bottom: 1px solid #e2e8f0;
+        vertical-align: top;
+    }
+
+    .formation-table tr:last-child td {
+        border-bottom: none;
+    }
+
+    .formation-table .date {
+        font-weight: 700;
+        color: #0284c7;
+        width: 13%;
+        font-size: 13px;
+    }
+
+    .formation-table .deg {
+        font-size: 13px;
+        color: #334155;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 2px;
+    }
+
+    .formation-table .school {
+        font-size: 12px;
+        color: #64748b;
+    }
+
+    /* =========================
+       PRINT
+       ========================= */
+
+    @media print {
+        body {
+            background: #fff;
+            padding: 0;
+        }
+
+        .cv-container {
+            max-width: none;
+            box-shadow: none;
+            border-radius: 0;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+    }
+
+    /* =========================
+       MOBILE
+       ========================= */
+
+    @media (max-width: 800px) {
+        body {
+            padding: 0;
+        }
+
+        .cv-container {
+            flex-direction: column;
+            border-radius: 0;
+        }
+
+        .sidebar,
+        .main-content {
+            width: 100%;
+        }
+
+        .sidebar {
+            padding: 30px;
+        }
+
+        .main-content {
+            padding: 30px;
+        }
+
+        .name-header h1 {
+            font-size: 28px;
+        }
+
+        .job-header {
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .job-date-cell {
+            align-self: flex-start;
+        }
+    }
 </style>
 </head>
+
 <body>
 
 <div class="cv-container">
-    
-    <!-- BARRE LATÉRALE -->
+
+    <!-- =========================
+         BARRE LATÉRALE
+         ========================= -->
+
     <div class="sidebar">
-        <!-- REMPLACEZ "photo-profil.png" PAR VOTRE IMAGE -->
-        <img src="photo-profil.png" alt="Mohamed Ali BEN JABER" class="profile-photo">
-        
+
+        <img src="photo-profil.png"
+             alt="Mohamed Ali BEN JABER"
+             class="profile-photo">
+
+        <!-- CONTACT -->
+
         <div class="contact-item">
             <i class="fa-solid fa-location-dot"></i>
-            <span>5 Rue de Marostica<br>78180, Montigny-Le-Bretonneux</span>
+            <span>
+                5 Rue de Marostica<br>
+                78180 Montigny-le-Bretonneux
+            </span>
         </div>
+
         <div class="contact-item">
             <i class="fa-solid fa-phone"></i>
             <span>07.51.18.68.95</span>
         </div>
+
         <div class="contact-item">
             <i class="fa-solid fa-envelope"></i>
-            <a href="mailto:mali.benjaber@gmail.com">mali.benjaber@gmail.com</a>
+            <a href="mailto:mali.benjaber@gmail.com">
+                mali.benjaber@gmail.com
+            </a>
         </div>
 
-        <h2><i class="fa-solid fa-gears" style="margin-right: 10px; color:#38bdf8;"></i> Expertises & Outils</h2>
-        
+
+        <!-- EXPERTISES -->
+
+        <h2>
+            <i class="fa-solid fa-gears"
+               style="margin-right:10px;color:#38bdf8;">
+            </i>
+            Expertises
+        </h2>
+
         <div class="sidebar-block">
-            <div class="sidebar-title">Ingénierie Système</div>
-            <div class="sidebar-text">Cycle en V, Automotive ASPICE, Agile Scrum, SWQA, DOORS</div>
+            <div class="sidebar-title">
+                ADAS & Automobile
+            </div>
+            <div class="sidebar-text">
+                ADAS, Camera Calibration, Embedded Systems,
+                Function Ownership
+            </div>
         </div>
+
         <div class="sidebar-block">
-            <div class="sidebar-title">Modélisation (MBD)</div>
-            <div class="sidebar-text">MATLAB/Simulink, MXAM, LabVIEW, Scilab, Maple</div>
+            <div class="sidebar-title">
+                Ingénierie Système
+            </div>
+            <div class="sidebar-text">
+                Requirements Engineering, DOORS,
+                Cycle en V, Spécification,
+                Validation & Vérification
+            </div>
         </div>
+
         <div class="sidebar-block">
-            <div class="sidebar-title">Développement</div>
-            <div class="sidebar-text">Google Apps Script, Web Apps, Python, C, Assembleur, Mplab</div>
+            <div class="sidebar-title">
+                Qualité & Process
+            </div>
+            <div class="sidebar-text">
+                Automotive SPICE, SWQA,
+                Process Improvement,
+                Audit, Agile / Scrum
+            </div>
         </div>
+
         <div class="sidebar-block">
-            <div class="sidebar-title">Langues</div>
-            <div class="sidebar-text">Français (Bilingue)<br>Anglais (Professionnel)<br>Arabe (Maternelle)</div>
+            <div class="sidebar-title">
+                Modélisation
+            </div>
+            <div class="sidebar-text">
+                MATLAB/Simulink, MXAM,
+                LabVIEW, Scilab, Maple
+            </div>
         </div>
+
+        <div class="sidebar-block">
+            <div class="sidebar-title">
+                Développement
+            </div>
+            <div class="sidebar-text">
+                Python, C, Google Apps Script,
+                Web Apps, Assembleur, MPLAB
+            </div>
+        </div>
+
+        <div class="sidebar-block">
+            <div class="sidebar-title">
+                Langues
+            </div>
+            <div class="sidebar-text">
+                Français — Bilingue<br>
+                Anglais — Professionnel<br>
+                Arabe — Langue maternelle
+            </div>
+        </div>
+
     </div>
 
-    <!-- CONTENU PRINCIPAL -->
+
+    <!-- =========================
+         CONTENU PRINCIPAL
+         ========================= -->
+
     <div class="main-content">
+
+        <!-- HEADER -->
+
         <div class="name-header">
-            <h1>Mohamed Ali BEN JABER</h1>
-            <div class="title">FUNCTION OWNER ADAS | INGÉNIEUR SYSTÈMES & PROCESS</div>
+
+            <h1>
+                Mohamed Ali BEN JABER
+            </h1>
+
+            <div class="title">
+                SENIOR ADAS SYSTEM ENGINEER |
+                FUNCTION OWNER | ASPICE
+            </div>
+
         </div>
+
+
+        <!-- PROFIL -->
 
         <div class="summary">
-            Docteur en Automatique avec près de 10 ans d'expérience dans l'ingénierie des systèmes embarqués et l'assurance qualité logicielle (SWQA). Expert du cycle en V, des normes Automotive ASPICE et de la modélisation, j'assure aujourd'hui le pilotage de bout en bout des fonctions de calibration de caméras ADAS.
+
+            <strong>Ingénieur Systèmes ADAS</strong> avec plus de
+            10 ans d'expérience dans l'industrie automobile,
+            spécialisé dans le pilotage de fonctions ADAS,
+            l'ingénierie des exigences et l'assurance qualité
+            logicielle. Actuellement Function Owner chez Valeo,
+            avec une expérience du cycle complet de développement,
+            de la spécification et gestion des exigences jusqu'à
+            la calibration, validation et résolution des anomalies.
+            Solide expertise en <strong>Automotive SPICE</strong>,
+            pilotage transverse et amélioration des processus R&amp;D.
+
         </div>
 
-        <h2><i class="fa-solid fa-briefcase"></i> Expériences Professionnelles</h2>
 
-        <div class="job-item">
-            <div class="job-header">
-                <div class="job-title-cell">Function Owner ADAS & Ticket Manager</div>
-                <div class="job-date-cell">Depuis 2024</div>
-            </div>
-            <div class="company"><i class="fa-regular fa-building"></i> VALEO</div>
-            <ul>
-                <li><strong>Pilotage de la fonction :</strong> Responsable du cycle de vie complet de la fonction de calibration de la caméra ADAS (de la spécification à la validation).</li>
-                <li><strong>Ingénierie Système :</strong> Définition, rédaction et gestion des exigences systèmes et logicielles sous DOORS.</li>
-                <li><strong>Gestion des anomalies (Ticket Manager) :</strong> Triage, priorisation et affectation des tickets de bugs aux équipes de développement.</li>
-                <li><strong>Coordination transverse & Reporting :</strong> Animation des réunions inter-équipes, suivi de la résolution (respect des délais) et création de tableaux de bord (KPIs).</li>
-            </ul>
-        </div>
+        <!-- =========================
+             EXPERIENCES
+             ========================= -->
 
-        <div class="job-item">
-            <div class="job-header">
-                <div class="job-title-cell">Ingénieur R&D Process Systèmes</div>
-                <div class="job-date-cell">Avril 2022 - 2024</div>
-            </div>
-            <div class="company"><i class="fa-regular fa-building"></i> VALEO</div>
-            <ul>
-                <li><strong>Amélioration continue :</strong> Déploiement d'infrastructures et d'outils optimisant l'efficacité des processus de développement R&D.</li>
-                <li><strong>Coaching et Qualité :</strong> Accompagnement des équipes R&D systèmes dans l'application des standards qualité pour répondre aux exigences clients.</li>
-                <li><strong>Certification ASPICE :</strong> Préparation et pilotage des audits de maturité, ayant mené à l'obtention du niveau ASPICE L2.</li>
-            </ul>
-        </div>
+        <h2>
+            <i class="fa-solid fa-briefcase"></i>
+            Expériences Professionnelles
+        </h2>
+
+
+        <!-- VALEO - FUNCTION OWNER -->
 
         <div class="job-item">
+
             <div class="job-header">
-                <div class="job-title-cell">Ingénieur SWQA & Support RFQ</div>
-                <div class="job-date-cell">Jan 2019 - Avr 2022</div>
+
+                <div class="job-title-cell">
+                    Function Owner ADAS &amp; Ticket Manager
+                </div>
+
+                <div class="job-date-cell">
+                    2024 – Aujourd'hui
+                </div>
+
             </div>
-            <div class="company"><i class="fa-regular fa-building"></i> EXPLEO (Pour le compte de RENAULT)</div>
-            <ul>
-                <li><strong>Assurance Qualité (SWQA) :</strong> Audit de la qualité des logiciels embarqués sur l'ensemble du cycle en V et suivi des indicateurs de performance.</li>
-                <li><strong>Déploiement Process :</strong> Coaching des équipes de développement pour l'intégration des standards ASPICE.</li>
-                <li><strong>Support RFQ :</strong> Accompagnement des équipes lors des appels d'offres, préparation des dossiers et choix des fournisseurs.</li>
-                <li><strong>Modélisation :</strong> Correction et optimisation des modèles MBD (MATLAB/Simulink) via MXAM.</li>
-            </ul>
-        </div>
-        
-        <div class="job-item">
-            <div class="job-header">
-                <div class="job-title-cell">Attaché de Recherche et d'Enseignement</div>
-                <div class="job-date-cell">Déc 2016 - Aoû 2018</div>
+
+            <div class="company">
+                <i class="fa-regular fa-building"></i>
+                VALEO
             </div>
-            <div class="company"><i class="fa-solid fa-university"></i> POLYTECH MARSEILLE / LABORATOIRE LSIS</div>
+
             <ul>
-                <li><strong>Enseignement :</strong> Animation de cours, travaux dirigés (TD) et travaux pratiques (TP) en automatique et informatique industrielle.</li>
-                <li><strong>Recherche :</strong> Modélisation et optimisation de systèmes complexes au sein du laboratoire LSIS.</li>
-                <li><strong>Encadrement :</strong> Accompagnement et évaluation des étudiants lors de leurs projets de fin d'études.</li>
+
+                <li>
+                    <strong>Function Ownership :</strong>
+                    pilotage du cycle de vie complet d'une fonction
+                    de calibration caméra ADAS, de la spécification
+                    à la validation.
+                </li>
+
+                <li>
+                    <strong>System Engineering :</strong>
+                    définition, rédaction, analyse et gestion des
+                    exigences système et logicielles sous DOORS.
+                </li>
+
+                <li>
+                    <strong>Calibration ADAS :</strong>
+                    pilotage des activités de calibration et suivi
+                    des performances de la fonction.
+                </li>
+
+                <li>
+                    <strong>Ticket Management :</strong>
+                    triage, analyse, priorisation et affectation
+                    des anomalies aux équipes concernées.
+                </li>
+
+                <li>
+                    <strong>Coordination transverse :</strong>
+                    interface entre les équipes système, software,
+                    calibration et validation.
+                </li>
+
+                <li>
+                    <strong>Reporting :</strong>
+                    suivi des KPI, des délais de résolution et de
+                    la maturité de la fonction.
+                </li>
+
             </ul>
+
         </div>
 
+
+        <!-- VALEO - PROCESS -->
+
         <div class="job-item">
+
             <div class="job-header">
-                <div class="job-title-cell">Ingénieur R&D / Doctorant</div>
-                <div class="job-date-cell">Nov 2013 - Nov 2016</div>
+
+                <div class="job-title-cell">
+                    Ingénieur R&amp;D Process &amp; System Engineering
+                </div>
+
+                <div class="job-date-cell">
+                    Avr. 2022 – 2024
+                </div>
+
             </div>
-            <div class="company"><i class="fa-regular fa-building"></i> STMicroelectronics & LABORATOIRE LSIS</div>
+
+            <div class="company">
+                <i class="fa-regular fa-building"></i>
+                VALEO
+            </div>
+
             <ul>
-                <li><em>Projet européen INTEGRATE.</em></li>
-                <li>Développement de méthodes d'estimation de données par métrologie virtuelle pour optimiser les régulateurs (Run-to-Run) dans la fabrication de semi-conducteurs.</li>
+
+                <li>
+                    <strong>Process &amp; amélioration continue :</strong>
+                    déploiement d'outils et d'infrastructures
+                    améliorant l'efficacité des activités R&amp;D.
+                </li>
+
+                <li>
+                    <strong>Coaching &amp; qualité :</strong>
+                    accompagnement des équipes système dans
+                    l'application des processus et standards qualité.
+                </li>
+
+                <li>
+                    <strong>Automotive SPICE :</strong>
+                    préparation et pilotage des évaluations
+                    de maturité et suivi des actions d'amélioration,
+                    jusqu'à l'obtention du niveau ASPICE L2.
+                </li>
+
             </ul>
+
         </div>
 
-        <h2><i class="fa-solid fa-graduation-cap"></i> Formation</h2>
+
+        <!-- EXPLEO / RENAULT -->
+
+        <div class="job-item">
+
+            <div class="job-header">
+
+                <div class="job-title-cell">
+                    Ingénieur Software Quality &amp; Support RFQ
+                </div>
+
+                <div class="job-date-cell">
+                    Jan. 2019 – Avr. 2022
+                </div>
+
+            </div>
+
+            <div class="company">
+                <i class="fa-regular fa-building"></i>
+                EXPLEO — Pour le compte de RENAULT
+            </div>
+
+            <ul>
+
+                <li>
+                    <strong>Software Quality Assurance :</strong>
+                    audit de la qualité des logiciels embarqués
+                    sur l'ensemble du cycle en V et suivi des
+                    indicateurs de performance.
+                </li>
+
+                <li>
+                    <strong>ASPICE :</strong>
+                    accompagnement et coaching des équipes de
+                    développement dans l'application des processus.
+                </li>
+
+                <li>
+                    <strong>Support RFQ :</strong>
+                    contribution aux appels d'offres, préparation
+                    des dossiers techniques et accompagnement
+                    dans l'évaluation des fournisseurs.
+                </li>
+
+                <li>
+                    <strong>Model-Based Design :</strong>
+                    correction et optimisation de modèles
+                    MATLAB/Simulink via MXAM.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- POLYTECH -->
+
+        <div class="job-item">
+
+            <div class="job-header">
+
+                <div class="job-title-cell">
+                    Attaché de Recherche et d'Enseignement
+                </div>
+
+                <div class="job-date-cell">
+                    Déc. 2016 – Août 2018
+                </div>
+
+            </div>
+
+            <div class="company">
+                <i class="fa-solid fa-university"></i>
+                POLYTECH MARSEILLE / LABORATOIRE LSIS
+            </div>
+
+            <ul>
+
+                <li>
+                    <strong>Enseignement :</strong>
+                    cours, TD et TP en automatique et informatique
+                    industrielle.
+                </li>
+
+                <li>
+                    <strong>Recherche :</strong>
+                    modélisation et optimisation de systèmes complexes.
+                </li>
+
+                <li>
+                    <strong>Encadrement :</strong>
+                    accompagnement et évaluation d'étudiants
+                    sur leurs projets de fin d'études.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- STMICRO -->
+
+        <div class="job-item">
+
+            <div class="job-header">
+
+                <div class="job-title-cell">
+                    Ingénieur R&amp;D / Doctorant
+                </div>
+
+                <div class="job-date-cell">
+                    Nov. 2013 – Nov. 2016
+                </div>
+
+            </div>
+
+            <div class="company">
+                <i class="fa-regular fa-building"></i>
+                STMicroelectronics &amp; LABORATOIRE LSIS
+            </div>
+
+            <ul>
+
+                <li>
+                    <strong>Projet européen INTEGRATE :</strong>
+                    développement de méthodes d'estimation de
+                    données par métrologie virtuelle.
+                </li>
+
+                <li>
+                    Optimisation de régulateurs Run-to-Run
+                    appliqués à la fabrication de semi-conducteurs.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- =========================
+             FORMATION
+             ========================= -->
+
+        <h2>
+            <i class="fa-solid fa-graduation-cap"></i>
+            Formation
+        </h2>
+
         <table class="formation-table">
+
             <tr>
-                <td class="date">2018</td>
-                <td>
-                    <span class="deg">Diplôme de Doctorat en Automatique</span>
-                    <span class="school">Université d'Aix-Marseille</span>
+
+                <td class="date">
+                    2018
                 </td>
+
+                <td>
+
+                    <span class="deg">
+                        Doctorat en Automatique
+                    </span>
+
+                    <span class="school">
+                        Université d'Aix-Marseille
+                    </span>
+
+                </td>
+
             </tr>
+
             <tr>
-                <td class="date">2013</td>
-                <td>
-                    <span class="deg">Diplôme d'Ingénieur en Automatique</span>
-                    <span class="school">École Nationale d'Ingénieurs de Gabès (Tunisie)</span>
+
+                <td class="date">
+                    2013
                 </td>
+
+                <td>
+
+                    <span class="deg">
+                        Diplôme d'Ingénieur en Automatique
+                    </span>
+
+                    <span class="school">
+                        École Nationale d'Ingénieurs de Gabès — Tunisie
+                    </span>
+
+                </td>
+
             </tr>
+
         </table>
+
     </div>
 
 </div>
