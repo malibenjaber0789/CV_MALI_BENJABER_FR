@@ -9,6 +9,11 @@
     <meta name="description"
           content="Mohamed Ali BEN JABER – Senior ADAS System Engineer, Function Owner, AI & Automation, Automotive SPICE.">
 
+    <!-- Ajout de la police "Inter" pour corriger le bug des caractères "l" et "i" dans le PDF -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
     <style>
         * {
             box-sizing: border-box;
@@ -17,10 +22,13 @@
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            /* On remplace Arial par Inter, beaucoup plus propre en PDF */
+            font-family: 'Inter', Arial, sans-serif;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
             background: #f3f4f6;
             color: #222;
-            line-height: 1.55;
+            line-height: 1.5;
         }
 
         .container {
@@ -33,288 +41,118 @@
         }
 
         /* ================= SIDEBAR ================= */
-
-        .sidebar {
-            background: #17212b;
-            color: white;
-            padding: 35px 25px;
-        }
-
-        .profile {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
+        .sidebar { background: #17212b; color: white; padding: 35px 25px; }
+        .profile { text-align: center; margin-bottom: 30px; }
         .profile img {
-            width: 135px;
-            height: 135px;
+            width: 135px; height: 135px;
             object-fit: cover;
-            border-radius: 50%;
-            border: 4px solid white;
-            margin-bottom: 15px;
+            border-radius: 50%; border: 4px solid white; margin-bottom: 15px;
         }
-
-        .profile h1 {
-            font-size: 23px;
-            line-height: 1.25;
-        }
-
-        .profile p {
-            margin-top: 8px;
-            font-size: 13px;
-            color: #d7dde3;
-        }
-
-        .side-section {
-            margin-top: 28px;
-        }
-
+        .profile h1 { font-size: 23px; line-height: 1.25; }
+        .profile p { margin-top: 8px; font-size: 13px; color: #d7dde3; }
+        .side-section { margin-top: 25px; }
         .side-section h2 {
-            font-size: 15px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border-bottom: 1px solid #596673;
-            padding-bottom: 7px;
-            margin-bottom: 12px;
+            font-size: 14px; text-transform: uppercase; letter-spacing: 1px;
+            border-bottom: 1px solid #596673; padding-bottom: 6px; margin-bottom: 10px;
         }
-
-        .side-section ul {
-            list-style: none;
-        }
-
-        .side-section li {
-            font-size: 13px;
-            margin-bottom: 8px;
-            color: #e4e8eb;
-        }
-
-        .contact p {
-            font-size: 13px;
-            margin-bottom: 7px;
-            word-break: break-word;
-        }
-
-        /* Style pour les petits drapeaux */
+        .side-section ul { list-style: none; }
+        .side-section li { font-size: 12.5px; margin-bottom: 7px; color: #e4e8eb; }
+        .contact p { font-size: 12.5px; margin-bottom: 6px; word-break: break-word; }
+        
         .flag {
-            width: 18px;
-            vertical-align: middle;
-            margin-right: 6px;
-            margin-bottom: 2px;
-            border-radius: 2px;
-            box-shadow: 0 0 2px rgba(0,0,0,0.2);
+            width: 18px; vertical-align: middle; margin-right: 6px;
+            margin-bottom: 2px; border-radius: 2px; box-shadow: 0 0 2px rgba(0,0,0,0.2);
         }
 
         /* ================= MAIN ================= */
-
-        .main {
-            padding: 40px 45px;
-        }
-
-        .header h1 {
-            font-size: 31px;
-            color: #17212b;
-            line-height: 1.2;
-            margin-bottom: 8px;
-        }
-
-        .header .subtitle {
-            font-size: 17px;
-            font-weight: bold;
-            color: #2878b5;
-            margin-bottom: 25px;
-        }
-
-        .section {
-            margin-top: 30px;
-        }
-
+        .main { padding: 35px 40px; }
+        .header h1 { font-size: 30px; color: #17212b; line-height: 1.2; margin-bottom: 5px; }
+        .header .subtitle { font-size: 16px; font-weight: bold; color: #2878b5; margin-bottom: 20px; }
+        
+        .section { margin-top: 25px; }
         .section-title {
-            font-size: 19px;
-            text-transform: uppercase;
-            color: #17212b;
-            border-bottom: 2px solid #2878b5;
-            padding-bottom: 6px;
-            margin-bottom: 18px;
+            font-size: 18px; text-transform: uppercase; color: #17212b;
+            border-bottom: 2px solid #2878b5; padding-bottom: 5px; margin-bottom: 15px;
         }
-
-        .profile-text {
-            font-size: 14px;
-            text-align: justify;
-        }
+        .profile-text { font-size: 13.5px; text-align: justify; }
 
         /* ================= EXPERTISE ================= */
-
-        .expertise-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 18px;
-        }
-
-        .expertise-card {
-            border-left: 4px solid #2878b5;
-            padding: 12px 15px;
-            background: #f7f9fb;
-        }
-
-        .expertise-card.ai {
-            border-left-color: #6c4bb3;
-        }
-
-        .expertise-card h3 {
-            font-size: 15px;
-            margin-bottom: 8px;
-            color: #17212b;
-        }
-
-        .expertise-card ul {
-            padding-left: 17px;
-        }
-
-        .expertise-card li {
-            font-size: 13px;
-            margin-bottom: 4px;
-        }
+        .expertise-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .expertise-card { border-left: 4px solid #2878b5; padding: 12px 14px; background: #f7f9fb; }
+        .expertise-card.ai { border-left-color: #6c4bb3; }
+        .expertise-card h3 { font-size: 14px; margin-bottom: 8px; color: #17212b; }
+        .expertise-card ul { padding-left: 17px; }
+        .expertise-card li { font-size: 12.5px; margin-bottom: 4px; }
 
         /* ================= EXPERIENCE ================= */
-
-        .experience {
-            margin-bottom: 25px;
-        }
-
-        .experience-header {
-            display: flex;
-            justify-content: space-between;
-            gap: 15px;
-            align-items: baseline;
-        }
-
-        .experience h3 {
-            font-size: 17px;
-            color: #17212b;
-        }
-
-        .experience .date {
-            font-size: 13px;
-            color: #666;
-            white-space: nowrap;
-        }
-
-        .company {
-            color: #2878b5;
-            font-size: 14px;
-            font-weight: bold;
-            margin: 3px 0 8px;
-        }
-
-        .experience ul {
-            padding-left: 20px;
-        }
-
-        .experience li {
-            font-size: 13.5px;
-            margin-bottom: 6px;
-        }
-
-        .highlight {
-            font-weight: bold;
-            color: #17212b;
-        }
-
+        .experience { margin-bottom: 20px; }
+        .experience-header { display: flex; justify-content: space-between; gap: 15px; align-items: baseline; }
+        .experience h3 { font-size: 16px; color: #17212b; }
+        .experience .date { font-size: 12.5px; color: #666; white-space: nowrap; }
+        .company { color: #2878b5; font-size: 13.5px; font-weight: 600; margin: 2px 0 6px; }
+        .experience ul { padding-left: 20px; }
+        .experience li { font-size: 13px; margin-bottom: 5px; }
+        .highlight { font-weight: 600; color: #17212b; }
+        
         .ai-highlight {
-            border-left: 4px solid #6c4bb3;
-            background: #f7f4fc;
-            padding: 10px 14px;
-            margin-top: 10px;
+            border-left: 4px solid #6c4bb3; background: #f7f4fc;
+            padding: 8px 12px; margin-top: 8px;
         }
 
         /* ================= EDUCATION ================= */
-
-        .education-item {
-            margin-bottom: 15px;
-        }
-
-        .education-item h3 {
-            font-size: 15px;
-        }
-
-        .education-item p {
-            font-size: 13px;
-            color: #555;
-        }
+        .education-item { margin-bottom: 12px; }
+        .education-item h3 { font-size: 14px; font-weight: 600; }
+        .education-item p { font-size: 12.5px; color: #555; }
 
         /* ================= AI FOOTER ================= */
-
         .ai-footer {
-            margin-top: 35px;
-            padding: 14px 18px;
-            background: #f7f4fc;
-            border-left: 4px solid #6c4bb3;
-            text-align: center;
-            color: #555;
-            font-size: 12px;
+            margin-top: 25px; padding: 12px 15px; background: #f7f4fc;
+            border-left: 4px solid #6c4bb3; text-align: center; color: #555; font-size: 12px;
         }
 
-        .ai-footer p {
-            margin: 4px 0;
-        }
+        .footer { margin-top: 15px; text-align: center; font-size: 11px; color: #888; }
 
-        /* ================= FOOTER ================= */
-
-        .footer {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 11px;
-            color: #888;
-        }
-
-        /* ================= PRINT ================= */
-
+        /* ================= PRINT (Correction PDF) ================= */
         @media print {
+            @page {
+                size: A4 portrait;
+                margin: 0; /* Supprime les marges par défaut de l'imprimante */
+            }
             body {
                 background: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
             }
-
             .container {
                 margin: 0;
                 box-shadow: none;
-                max-width: none;
+                max-width: 100%;
+                /* On réduit très légèrement l'échelle globale pour que tout rentre sur 1 page */
+                zoom: 0.95; 
             }
-
+            .main {
+                /* On réduit un peu les marges internes en impression */
+                padding: 25px 30px;
+            }
             .sidebar {
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
+                padding: 25px 20px;
+            }
+            
+            /* Empêche les expériences et encadrés d'être coupés au milieu lors du passage à la page 2 (au cas où) */
+            .experience, .expertise-card, .side-section, .ai-footer {
+                page-break-inside: avoid;
+                break-inside: avoid;
             }
         }
 
         /* ================= MOBILE ================= */
-
         @media (max-width: 800px) {
-
-            .container {
-                grid-template-columns: 1fr;
-                margin: 0;
-            }
-
-            .sidebar {
-                padding: 25px;
-            }
-
-            .main {
-                padding: 30px 25px;
-            }
-
-            .expertise-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .experience-header {
-                flex-direction: column;
-                gap: 2px;
-            }
-
-            .header h1 {
-                font-size: 25px;
-            }
+            .container { grid-template-columns: 1fr; margin: 0; }
+            .sidebar { padding: 25px; }
+            .main { padding: 30px 25px; }
+            .expertise-grid { grid-template-columns: 1fr; }
+            .experience-header { flex-direction: column; gap: 2px; }
+            .header h1 { font-size: 25px; }
         }
     </style>
 </head>
