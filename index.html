@@ -13,119 +13,142 @@
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f2f2f2;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #eef0f4;
     color: #222;
+    line-height: 1.55;
 }
 
 .cv {
-    max-width: 1100px;
+    max-width: 1180px;
     margin: 30px auto;
-    background: white;
     display: grid;
-    grid-template-columns: 280px 1fr;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+    grid-template-columns: 310px 1fr;
+    background: white;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.12);
 }
 
-/* =========================
-   SIDEBAR
-========================= */
+/* ================= SIDEBAR ================= */
 
 .sidebar {
     background: #202632;
     color: white;
-    padding: 30px 25px;
+    padding: 35px 28px;
 }
 
 .profile-photo {
-    width: 140px;
-    height: 140px;
+    width: 145px;
+    height: 145px;
     border-radius: 50%;
     object-fit: cover;
     display: block;
     margin: 0 auto 25px;
-    border: 4px solid white;
+    border: 4px solid #fff;
 }
 
 .sidebar h3 {
     font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #bfc5d0;
-    margin-top: 25px;
+    letter-spacing: 1.2px;
+    margin-top: 28px;
     margin-bottom: 10px;
+    color: #bfc7d4;
+    text-transform: uppercase;
 }
 
 .contact {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.7;
 }
 
+.contact div {
+    margin-bottom: 5px;
+}
+
 .skill-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .skill-group strong {
     display: block;
-    font-size: 13px;
-    margin-bottom: 4px;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 5px;
 }
 
 .skill-group span {
     display: block;
-    color: #d7dbe2;
-    font-size: 12.5px;
+    color: #d4d9e1;
+    font-size: 13px;
     line-height: 1.65;
 }
 
-/* =========================
-   MAIN
-========================= */
+/* ================= MAIN ================= */
 
 .main {
-    padding: 38px 45px;
+    padding: 42px 48px;
 }
 
 .header {
     border-bottom: 2px solid #eee;
-    padding-bottom: 22px;
-    margin-bottom: 25px;
+    padding-bottom: 24px;
+    margin-bottom: 28px;
 }
 
 .header h1 {
     margin: 0;
-    font-size: 31px;
+    font-size: 34px;
+    letter-spacing: 0.5px;
     color: #202632;
 }
 
 .header h2 {
-    margin: 7px 0 0;
-    font-size: 17px;
-    color: #604b91;
-    letter-spacing: 0.5px;
+    margin: 6px 0 18px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #5d4a91;
+    letter-spacing: 0.8px;
 }
 
-/* =========================
-   SECTIONS
-========================= */
+/* ================= AI FOOTER TOP ================= */
+
+.ai-intro {
+    background: linear-gradient(135deg, #f7f3fc, #faf9fd);
+    border-left: 4px solid #6c4bb3;
+    padding: 13px 18px;
+    margin-top: 12px;
+    border-radius: 5px;
+}
+
+.ai-intro p {
+    margin: 3px 0;
+    font-size: 13px;
+    color: #555;
+}
+
+.ai-intro p:first-child {
+    font-weight: 500;
+}
+
+/* ================= SECTIONS ================= */
 
 .section {
-    margin-bottom: 28px;
+    margin-bottom: 32px;
 }
 
 .section-title {
-    font-size: 17px;
+    font-size: 18px;
+    color: #202632;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #202632;
-    border-left: 4px solid #6c4bb3;
-    padding-left: 10px;
-    margin-bottom: 15px;
+    border-left: 5px solid #6c4bb3;
+    padding-left: 12px;
+    margin-bottom: 17px;
 }
 
+/* ================= PROFILE ================= */
+
 .profile {
-    font-size: 14px;
-    line-height: 1.65;
+    font-size: 15px;
     color: #444;
 }
 
@@ -133,135 +156,123 @@ body {
     color: #202632;
 }
 
-/* =========================
-   EXPERTISE
-========================= */
+/* ================= EXPERTISE CARDS ================= */
 
 .expertise-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    gap: 15px;
 }
 
 .expertise-card {
-    border: 1px solid #e2e2e2;
-    padding: 14px;
-    border-radius: 5px;
+    border: 1px solid #e4e5e9;
+    border-radius: 7px;
+    padding: 17px;
     background: #fafafa;
 }
 
 .expertise-card h3 {
-    margin: 0 0 7px;
-    color: #604b91;
-    font-size: 13px;
+    margin: 0 0 8px;
+    font-size: 14px;
+    color: #5d4a91;
 }
 
 .expertise-card p {
     margin: 0;
-    font-size: 12.5px;
-    line-height: 1.55;
+    font-size: 13px;
     color: #555;
+    line-height: 1.6;
 }
 
-/* =========================
-   EXPERIENCE
-========================= */
+/* ================= EXPERIENCE ================= */
 
 .experience {
-    margin-bottom: 22px;
+    margin-bottom: 25px;
 }
 
 .experience-header {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
     align-items: flex-start;
-    gap: 15px;
 }
 
 .experience h3 {
     margin: 0;
-    font-size: 16px;
+    font-size: 17px;
     color: #202632;
 }
 
 .company {
-    color: #604b91;
-    font-weight: bold;
-    font-size: 13px;
+    color: #6c4bb3;
+    font-weight: 600;
     margin-top: 2px;
 }
 
 .date {
     color: #777;
-    font-size: 12px;
+    font-size: 13px;
     white-space: nowrap;
 }
 
 .experience ul {
-    margin-top: 8px;
+    margin: 9px 0 0;
     padding-left: 20px;
 }
 
 .experience li {
-    font-size: 13px;
-    line-height: 1.55;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
+    font-size: 14px;
     color: #444;
 }
 
-/* =========================
-   FORMATION
-========================= */
+/* ================= FORMATION ================= */
 
 .education-item {
-    font-size: 13px;
-    margin-bottom: 9px;
-    color: #444;
+    margin-bottom: 12px;
+}
+
+.education-item strong {
+    color: #202632;
 }
 
 .education-year {
-    color: #604b91;
-    font-weight: bold;
-    margin-right: 7px;
+    color: #6c4bb3;
+    font-weight: 600;
+    margin-right: 8px;
 }
 
-/* =========================
-   AI FOOTER
-========================= */
+/* ================= AI FOOTER ================= */
 
 .ai-footer {
-    margin-top: 30px;
-    padding: 15px 18px;
+    margin-top: 35px;
+    padding: 18px 20px;
     background: #f7f3fc;
-    border-left: 4px solid #6c4bb3;
-    border-radius: 5px;
+    border-radius: 7px;
+    border: 1px solid #e4dff0;
     text-align: center;
 }
 
 .ai-footer p {
-    margin: 4px 0;
+    margin: 5px 0;
     color: #625878;
-    font-size: 12px;
+    font-size: 13px;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* ================= FOOTER ================= */
 
 .footer {
-    margin-top: 18px;
-    padding-top: 12px;
+    margin-top: 20px;
+    padding-top: 15px;
     border-top: 1px solid #eee;
     text-align: center;
     color: #888;
-    font-size: 11px;
+    font-size: 12px;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* ================= RESPONSIVE ================= */
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
 
     .cv {
         grid-template-columns: 1fr;
@@ -272,8 +283,13 @@ body {
         text-align: center;
     }
 
+    .skill-group span,
+    .skill-group strong {
+        text-align: center;
+    }
+
     .main {
-        padding: 28px 22px;
+        padding: 30px 25px;
     }
 
     .expertise-grid {
@@ -282,7 +298,7 @@ body {
 
     .experience-header {
         flex-direction: column;
-        gap: 2px;
+        gap: 3px;
     }
 
     .date {
@@ -290,9 +306,7 @@ body {
     }
 }
 
-/* =========================
-   PRINT
-========================= */
+/* ================= PRINT ================= */
 
 @media print {
 
@@ -303,16 +317,19 @@ body {
     .cv {
         margin: 0;
         box-shadow: none;
+        max-width: none;
     }
 
     .sidebar {
-        -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
     }
 
-    .ai-footer {
-        -webkit-print-color-adjust: exact;
+    .ai-intro,
+    .ai-footer,
+    .expertise-card {
         print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
     }
 }
 </style>
@@ -326,7 +343,6 @@ body {
 
 <aside class="sidebar">
 
-    <!-- PHOTO : CADRAGE CONSERVÉ -->
     <img src="photo-profil.png"
          alt="Mohamed Ali BEN JABER"
          class="profile-photo">
@@ -344,11 +360,11 @@ body {
 
     <div class="skill-group">
         <span>
-            ADAS<br>
-            Camera Calibration<br>
-            Embedded Systems<br>
             Function Ownership<br>
+            ADAS Camera<br>
+            Calibration<br>
             Diagnostic / UDS<br>
+            System Engineering<br>
             Ticket Management
         </span>
     </div>
@@ -375,8 +391,7 @@ body {
             Requirements Engineering<br>
             DOORS<br>
             Cycle en V<br>
-            Spécification<br>
-            Validation & Vérification
+            Agile / Scrum
         </span>
     </div>
 
@@ -387,25 +402,24 @@ body {
         <span>
             Automotive SPICE<br>
             SWQA<br>
-            Process Improvement<br>
-            Audit<br>
-            Agile / Scrum
+            Process Engineering<br>
+            Continuous Improvement
         </span>
     </div>
 
 
-    <h3>Modélisation & Développement</h3>
+    <h3>Développement</h3>
 
     <div class="skill-group">
         <span>
-            MATLAB / Simulink<br>
-            MXAM<br>
-            LabVIEW<br>
-            Python<br>
-            C / Assembleur<br>
             Google Apps Script<br>
             Web Apps<br>
-            HTML / CSS / JavaScript
+            JavaScript / HTML / CSS<br>
+            Python<br>
+            C / Assembleur<br>
+            MATLAB / Simulink<br>
+            MXAM<br>
+            LabVIEW
         </span>
     </div>
 
@@ -434,9 +448,26 @@ body {
         <h1>Mohamed Ali BEN JABER</h1>
 
         <h2>
-            SENIOR ADAS SYSTEM ENGINEER |
-            FUNCTION OWNER | AI & AUTOMATION | ASPICE
+            SENIOR ADAS SYSTEM ENGINEER
+            <br>
+            <span style="font-size:15px;">
+                FUNCTION OWNER | AI & AUTOMATION | ASPICE
+            </span>
         </h2>
+
+        <div class="ai-intro">
+
+            <p>
+                🤖 Ce CV a été co-développé avec une IA.
+                Promis, l'expérience professionnelle est bien humaine.
+            </p>
+
+            <p>
+                🤖 Écrit par un humain. Optimisé avec une IA.
+                Relu par… un humain.
+            </p>
+
+        </div>
 
     </header>
 
@@ -465,11 +496,11 @@ body {
             </p>
 
             <p>
-                J'intègre également
-                <strong>l'IA générative et l'automatisation</strong>
-                dans mes activités d'ingénierie pour développer des outils
-                internes, digitaliser les processus techniques et
-                améliorer l'efficacité des équipes R&D.
+                Je m'appuie également sur
+                <strong>l'IA générative et le développement d'outils internes</strong>
+                pour automatiser les activités d'ingénierie,
+                digitaliser les processus et améliorer la productivité
+                des équipes R&D.
             </p>
 
         </div>
@@ -477,7 +508,7 @@ body {
     </section>
 
 
-    <!-- EXPERTISES -->
+    <!-- EXPERTISE -->
 
     <section class="section">
 
@@ -530,8 +561,7 @@ body {
 
                 <p>
                     Google Apps Script · Web Apps · JavaScript ·
-                    HTML/CSS · Python · C · MATLAB/Simulink ·
-                    MXAM · LabVIEW
+                    HTML/CSS · Python · C · MATLAB/Simulink · MXAM
                 </p>
 
             </div>
@@ -545,25 +575,16 @@ body {
 
     <section class="section">
 
-        <h2 class="section-title">
-            Expériences Professionnelles
-        </h2>
+        <h2 class="section-title">Expériences professionnelles</h2>
 
-
-        <!-- VALEO FUNCTION OWNER -->
 
         <div class="experience">
 
             <div class="experience-header">
 
                 <div>
-                    <h3>
-                        Function Owner ADAS & Ticket Manager
-                    </h3>
-
-                    <div class="company">
-                        VALEO
-                    </div>
+                    <h3>Function Owner ADAS & Ticket Manager</h3>
+                    <div class="company">VALEO</div>
                 </div>
 
                 <div class="date">
@@ -631,22 +652,13 @@ body {
         </div>
 
 
-        <!-- VALEO PROCESS -->
-
         <div class="experience">
 
             <div class="experience-header">
 
                 <div>
-
-                    <h3>
-                        Ingénieur R&D Process & System Engineering
-                    </h3>
-
-                    <div class="company">
-                        VALEO
-                    </div>
-
+                    <h3>Ingénieur R&D Process & System Engineering</h3>
+                    <div class="company">VALEO</div>
                 </div>
 
                 <div class="date">
@@ -681,22 +693,15 @@ body {
         </div>
 
 
-        <!-- EXPLEO -->
-
         <div class="experience">
 
             <div class="experience-header">
 
                 <div>
-
-                    <h3>
-                        Ingénieur Software Quality & Support RFQ
-                    </h3>
-
+                    <h3>Ingénieur Software Quality & Support RFQ</h3>
                     <div class="company">
                         EXPLEO — Pour le compte de RENAULT
                     </div>
-
                 </div>
 
                 <div class="date">
@@ -738,22 +743,15 @@ body {
         </div>
 
 
-        <!-- POLYTECH -->
-
         <div class="experience">
 
             <div class="experience-header">
 
                 <div>
-
-                    <h3>
-                        Attaché de Recherche et d'Enseignement
-                    </h3>
-
+                    <h3>Attaché de Recherche et d'Enseignement</h3>
                     <div class="company">
                         POLYTECH MARSEILLE / LABORATOIRE LSIS
                     </div>
-
                 </div>
 
                 <div class="date">
@@ -786,22 +784,15 @@ body {
         </div>
 
 
-        <!-- STM -->
-
         <div class="experience">
 
             <div class="experience-header">
 
                 <div>
-
-                    <h3>
-                        Ingénieur R&D / Doctorant
-                    </h3>
-
+                    <h3>Ingénieur R&D / Doctorant</h3>
                     <div class="company">
                         STMicroelectronics & LABORATOIRE LSIS
                     </div>
-
                 </div>
 
                 <div class="date">
@@ -836,19 +827,13 @@ body {
 
     <section class="section">
 
-        <h2 class="section-title">
-            Formation
-        </h2>
+        <h2 class="section-title">Formation</h2>
 
         <div class="education-item">
 
-            <span class="education-year">
-                2018
-            </span>
+            <span class="education-year">2018</span>
 
-            <strong>
-                Doctorat en Automatique
-            </strong>
+            <strong>Doctorat en Automatique</strong>
 
             — Université d'Aix-Marseille
 
@@ -857,13 +842,9 @@ body {
 
         <div class="education-item">
 
-            <span class="education-year">
-                2013
-            </span>
+            <span class="education-year">2013</span>
 
-            <strong>
-                Diplôme d'Ingénieur en Automatique
-            </strong>
+            <strong>Diplôme d'Ingénieur en Automatique</strong>
 
             — École Nationale d'Ingénieurs de Gabès — Tunisie
 
@@ -872,9 +853,7 @@ body {
     </section>
 
 
-    <!-- =========================
-         PHRASES IA — UNIQUEMENT EN BAS
-    ========================== -->
+    <!-- AI FOOTER -->
 
     <div class="ai-footer">
 
